@@ -24,11 +24,6 @@ class ApiRegisterTest extends TestCase
                     'email' => ['The email field is required'],
                 ]
             ]);
-
-
-        //            ->assertStatus(200)
-        //            ->assertSessionHasErrors('name');
-
     }
 
     public function test_can_register_email_type_control()
@@ -49,11 +44,6 @@ class ApiRegisterTest extends TestCase
                     'email' => ['The email must be a valid email address.'],
                 ]
             ]);
-
-
-        //            ->assertStatus(200)
-        //            ->assertSessionHasErrors('name');
-
     }
 
     public function test_can_register_password_confirmation()
@@ -75,10 +65,5 @@ class ApiRegisterTest extends TestCase
                     'password' => ['The password confirmation does not match.'],
                 ]
             ]);
-
-
-        //            ->assertStatus(200)
-        //            ->assertSessionHasErrors('name');
-
     }
 }

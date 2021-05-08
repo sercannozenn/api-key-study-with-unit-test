@@ -6,7 +6,7 @@ use \App\Http\Controllers\Api\Auth\RegisterController;
 use \App\Http\Controllers\Api\Auth\LoginController;
 
 Route::post('register', [RegisterController::class, 'register'])->name('api.register');
-Route::post('login', [LoginController::class, 'register'])->name('api.login');
+Route::post('login', [LoginController::class, 'login'])->name('api.login');
 
 Route::middleware('auth:api')->group(function ()
 {

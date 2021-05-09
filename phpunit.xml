@@ -6,7 +6,10 @@
 >
     <testsuites>
         <testsuite name="Unit">
-            <directory suffix="Test.php">./tests/Unit</directory>
+            <directory suffix="ApiRegisterTest.php">./tests/Unit</directory>
+            <directory suffix="ApiIntegrationCreateTest.php">./tests/Unit</directory>
+            <directory suffix="ApiIntegrationUpdateTest.php">./tests/Unit</directory>
+            <directory suffix="ApiIntegrationDestroyTest.php">./tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>

@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "5e86edeb-c14a-40b8-b879-8684d19b67e9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://api.test/api/register?name=test&password=12345678&password_confirmation=12345678&email=test@test.com",
+					"protocol": "http",
+					"host": [
+						"api",
+						"test"
+					],
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://api.test/api/login?email=admin@admin.com&password=12345678",
+					"protocol": "http",
+					"host": [
+						"api",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@admin.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Integration - store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://api.test/api/integration?marketplace=N11&username=n11&password=n11parola",
+					"protocol": "http",
+					"host": [
+						"api",
+						"test"
+					],
+					"path": [
+						"api",
+						"integration"
+					],
+					"query": [
+						{
+							"key": "marketplace",
+							"value": "N11"
+						},
+						{
+							"key": "username",
+							"value": "n11"
+						},
+						{
+							"key": "password",
+							"value": "n11parola"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://api.test/api/integration/7",
+					"protocol": "http",
+					"host": [
+						"api",
+						"test"
+					],
+					"path": [
+						"api",
+						"integration",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://api.test/api/integration/7",
+					"protocol": "http",
+					"host": [
+						"api",
+						"test"
+					],
+					"path": [
+						"api",
+						"integration",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

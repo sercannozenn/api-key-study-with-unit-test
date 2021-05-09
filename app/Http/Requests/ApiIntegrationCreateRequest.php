@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\ValidationException;
 
-class LoginRequest extends FormRequest
+class ApiIntegrationCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,8 +26,9 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required',
-            'password' => 'required',
+            'marketplace' => 'required|max:255|unique:integrations',
+            'username' => 'required|max:255',
+            'password' => 'required|max:255'
         ];
     }
 

@@ -3,6 +3,8 @@
 namespace App\Console;
 
 use App\Console\Commands\IntegrationCreateCommand;
+use App\Console\Commands\IntegrationDeleteCommand;
+use App\Console\Commands\IntegrationUpdateCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -14,7 +16,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        IntegrationCreateCommand::class
+        IntegrationCreateCommand::class,
+        IntegrationUpdateCommand::class,
+        IntegrationDeleteCommand::class
     ];
 
     /**
